@@ -17,7 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 
 // const BACKEND_URL = "http://localhost:5000/submit" || process.env.BACKEND_URL;
 const BACKEND_URL =
-  process.env.BACKEND_URL || "http://BACKEND_PUBLIC_IP:5000/submit";
+  process.env.BACKEND_URL || "http://65.2.179.138:5000/submit";
 
 app.get("/", (req, res) => {
   res.render("index");
