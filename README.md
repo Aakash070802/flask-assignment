@@ -13,3 +13,13 @@
 
 - **FRONTEND**: http://35.154.82.13:3000/
 - **BACKEND**: http://65.2.179.138:5000/
+
+---
+
+## Task 3 - Docker + ECR + ECS Deployment
+
+**Frontend**:
+http://13.126.47.76:3000
+
+**Backend**:
+http://13.126.47.76:5000
