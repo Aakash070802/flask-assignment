@@ -2,14 +2,12 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
-ADD requirements.txt .
+COPY backend/requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir  -r requirements.txt
 
-ADD . .
+COPY backend/ .
 
 EXPOSE 5000
 
-ENTRYPOINT [ "python" ]
-
-CMD [ "app.py" ]
+CMD ["python", "app.py"]
