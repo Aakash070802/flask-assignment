@@ -16,9 +16,11 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-const BACKEND_URL = "http://localhost:5000/submit";
-// const BACKEND_URL =
-//   process.env.BACKEND_URL;
+/* LOCAL URL */
+// const BACKEND_URL = "http://localhost:5000/submit";
+
+/* PUBLIC IP URL */
+const BACKEND_URL = process.env.BACKEND_URL;
 
 app.get("/", (req, res) => {
   res.render("index");
