@@ -16,9 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-/* LOCAL URL */
-// const BACKEND_URL = "http://localhost:5000/submit";
-
 /* PUBLIC IP URL FOR TASK 1.*/
 // const BACKEND_URL = process.env.BACKEND_URL || "http://65.0.29.17:5000/submit";
 
@@ -27,8 +24,7 @@ app.set("views", path.join(__dirname, "views"));
 //   process.env.BACKEND_URL || "http://13.235.23.99:5000/submit";
 
 /* PUBLIC IP URL FOR TASK 3.*/
-const BACKEND_URL =
-  process.env.BACKEND_URL || "http://13.203.229.232:5000/submit";
+const BACKEND_URL = "http://localhost:5000/submit";
 
 app.get("/", (req, res) => {
   res.render("index");
