@@ -27,7 +27,8 @@ app.set("views", path.join(__dirname, "views"));
 //   process.env.BACKEND_URL || "http://13.235.23.99:5000/submit";
 
 /* PUBLIC IP URL FOR TASK 3.*/
-const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:5000/submit";
+const BACKEND_URL =
+  process.env.BACKEND_URL || "http://13.203.229.232:5000/submit";
 
 app.get("/", (req, res) => {
   res.render("index");
