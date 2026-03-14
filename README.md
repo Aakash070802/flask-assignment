@@ -18,6 +18,5 @@
 
 ## Task 3 - Docker + ECR + ECS Deployment
 
-**Frontend**:
-
-**Backend**:
+- **Frontend**:
+- **Backend**:
